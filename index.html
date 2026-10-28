@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مصوّر الغابة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Lalezar&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:Cairo,Tahoma,sans-serif;color:#0b3d2a;background:linear-gradient(#ffe9a8 0,#d6f0a8 14%,#7cc67a 40%,#2f8f4e 75%,#0f4d33 100%) fixed;overflow-x:hidden}
+.tr{position:fixed;font-size:54px;opacity:.7;pointer-events:none}
+.an{position:fixed;bottom:6px;font-size:34px;animation:wk 18s linear infinite;pointer-events:none}
+@keyframes wk{from{transform:translateX(110vw)}to{transform:translateX(-20vw)}}
+.ff{position:fixed;font-size:16px;animation:fy 5s ease-in-out infinite alternate;pointer-events:none}
+@keyframes fy{to{transform:translate(18px,-26px);opacity:.3}}
+main{position:relative;max-width:720px;margin:0 auto;padding:14px 14px 90px}
+h1{font-family:Lalezar,Cairo,sans-serif;font-weight:400;font-size:2.5rem;margin:6px 0;text-align:center;color:#8a2c0d;text-shadow:0 3px 0 #fff}
+.card{background:rgba(255,252,238,.95);border-radius:26px;padding:18px;box-shadow:0 8px 0 #1f6b3acc;border:4px solid #fff}
+.hide{display:none}
+label{font-weight:700;display:block;margin:8px 0 4px}
+input{width:100%;font:inherit;font-size:1.2rem;padding:10px 14px;border-radius:16px;border:3px solid #3aa35f}
+.g{display:flex;gap:10px;margin:10px 0}
+.g button{flex:1}
+button{font:inherit;font-weight:900;font-size:1.1rem;padding:10px 16px;border:0;border-radius:18px;background:#ffb703;color:#5a2d00;box-shadow:0 5px 0 #c97f00;cursor:pointer}
+button:active{transform:translateY(3px);box-shadow:0 2px 0 #c97f00}
+button.on{background:#2a9d8f;color:#fff;box-shadow:0 5px 0 #1b6e64}
+.big{width:100%;margin-top:12px;font-size:1.3rem;background:#e76f1c;color:#fff;box-shadow:0 5px 0 #a8480a}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:900;margin-bottom:8px}
+.pill{background:#fffdf0;border-radius:999px;padding:4px 14px;border:3px solid #3aa35f}
+.bar{height:14px;background:#e3f4d2;border-radius:9px;overflow:hidden;margin-bottom:10px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffb703,#e76f1c);transition:width .4s}
+.txt{font-size:1.3rem;line-height:2.5;background:linear-gradient(#fbffe9,#e0f3c4);border-radius:20px;padding:12px 14px;border:3px dashed #3aa35f}
+.w{display:inline-block;padding:0 6px;margin:2px;border-radius:12px;cursor:pointer;transition:.15s}
+.w:hover{background:#fff1a6}
+.w.ok{background:#c5f1b4;color:#0a5c22;font-weight:900;cursor:default}
+.w.ok::after{content:" 🦌"}
+.w.bad{animation:sh .4s;background:#ffd0c2}
+@keyframes sh{25%{transform:translateX(6px)}75%{transform:translateX(-6px)}}
+.note{min-height:2em;text-align:center;font-weight:900;color:#8a2c0d;margin:8px 0 0}
+.pop{position:fixed;left:50%;top:38%;transform:translate(-50%,0);font-size:2.6rem;font-weight:900;color:#fff;text-shadow:0 3px 0 #e76f1c,0 0 20px #ffb703;animation:up 1s forwards;pointer-events:none;z-index:9}
+@keyframes up{to{transform:translate(-50%,-90px) scale(1.3);opacity:0}}
+.flash{position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:8;animation:fl .25s}
+@keyframes fl{from{opacity:.8}to{opacity:0}}
+.cert{text-align:center;border:8px double #e76f1c;background:#fffdf0;border-radius:18px;padding:18px 10px}
+.cert h2{font-family:Lalezar,Cairo,sans-serif;font-weight:400;color:#8a2c0d;font-size:2.2rem;margin:4px}
+.cert .nm{font-size:2rem;font-weight:900;color:#1f6b3a;border-bottom:3px dotted #e76f1c;display:inline-block;padding:0 14px;margin:6px 0}
+.cert .sc{font-size:2.4rem;font-weight:900;color:#c1440e}
+@media(prefers-reduced-motion:reduce){.an,.ff{animation:none}}
+</style>
+</head>
+<body>
+<div class="tr" style="top:14%;right:2px">🌲</div>
+<div class="tr" style="top:40%;left:0;font-size:70px">🌳</div>
+<div class="tr" style="top:68%;right:0;font-size:64px">🌲</div>
+<div class="ff" style="top:30%;left:20%">✨</div>
+<div class="ff" style="top:55%;left:70%;animation-delay:-2s">✨</div>
+<div class="an">🦌</div>
+<div class="an" style="animation-delay:-9s">🐿️</div>
+<main>
+<h1>📸 مصوّر الغابة 🌿</h1>
+
+<section id="home" class="card">
+<p style="font-weight:700;margin-top:0">تجوّل في الغابة بكاميرتك! في كل قطعة عشر كلمات خاطئة تختبئ مثل الغزلان. اضغط عليها لتلتقط لها صورة وتصحح الخطأ. الموضوعات: الهمزة المتوسطة والمتطرفة، والمبتدأ والخبر والفاعل بعلامات فرعية، وأنواع الجموع.</p>
+<label for="nm">اسمك الكريم</label>
+<input id="nm" placeholder="اكتب اسمك هنا" autocomplete="off">
+<div class="g"><button id="gm" class="on">👦 تلميذ</button><button id="gf">👧 تلميذة</button></div>
+<button class="big" id="go">🏕️ ابدأ الرحلة</button>
+</section>
+
+<section id="game" class="hide">
+<div class="top"><span class="pill" id="lv"></span><span class="pill" id="cnt"></span><button id="snd" style="padding:4px 12px">🔊</button></div>
+<div class="bar"><i id="pb"></i></div>
+<div class="card"><div class="txt" id="txt"></div><div class="note" id="note"></div>
+<button class="big hide" id="nx">المستوى التالي 🌲</button></div>
+</section>
+
+<section id="end" class="hide card">
+<div class="cert" id="cert"></div>
+<p style="text-align:center;font-weight:700">التقط لقطة شاشة للشهادة لتحتفظ بها 📸</p>
+<button class="big" id="again">🔄 رحلة جديدة</button>
+</section>
+</main>
+<script>
+const P=[
+"وصل {فئاد|فؤاد} إلى الغابة مع {رايس|رئيس} الكشافة، وكان يملك {جرئة|جرأة} كبيرة، {وتفائله|وتفاؤله} جميل. {يسئل|يسأل} في كل مكان، فلكل {سئال|سؤال} جواب. وجد {بير|بئر} ماء، ورأى {فأران|فئران} تهرب، وقال صديقه {مومن|مؤمن}: لنحل {مسايل|مسائل} الرحلة.",
+"جلس خالد على {شاطيء|شاطئ} النهر {الهادء|الهادئ}، وهو {قارء|قارئ} نشيط. {قرء|قرأ} {جزأ|جزء} من القصة تحت {ضؤ|ضوء} القمر. لم يترك {شئ|شيء} يشغله، فهو ليس {مبتدء|مبتدئ} في القراءة. وجد تحت الشجرة {ملجا|ملجأ} صغير، وشعر فيه {بالدفئ|بالدفء}.",
+"{الغزالين|الغزالان} سريعان، والأسدان {قويين|قويان}. {المرشدين|المرشدون} ماهرون في الغابة، والكشافون {نشيطين|نشيطون}. {أباك|أبوك} كريم، و{أخاك|أخوك} شجاع. الكتابان {مفيدين|مفيدان}، و{الحارسين|الحارسان} متعبان، والمتسابقون {فرحين|فرحون}. هذان الولدان {مجتهدين|مجتهدان}.",
+"جاء {المرشدين|المرشدون} إلى الغابة، ووصل {المصورين|المصوران} بالحافلة. تسلق {الطالبين|الطالبان} الجبل، وركض {الأخوين|الأخوان} خلف الغزال. فاز {اللاعبين|اللاعبون} بالسباق، وحضر {أباك|أبوك} الحفل. زارنا {أخاك|أخوك} أمس، وقال {المعلمين|المعلمون} كلمة طيبة، ويلعب {الولدين|الولدان} بالكرة، وساعد {أباه|أبوه} صديقه.",
+"في الغابة {أسدون|أسود} و{نمرات|نمور} و{فيلون|أفيال}. وعلى {الشجرون|الأشجار} تغرد {طيرون|طيور} و{عصفورون|عصافير}. وفي {الجبلون|الجبال} تسكن {دبون|دببة}، وتجري بين {بيتون|بيوت} القرية {كلبون|كلاب}.",
+"الفتيات {مجتهدون|مجتهدات}، والأولاد {نشيطات|نشيطون}، والمعلمات {حاضرون|حاضرات}. زرت {حدائقات|حدائق} الغابة و{مدارسات|مدارس} القرية، واشتريت {قلمات|أقلام} ودفاتر. والمعلمون {فرحات|فرحون}، والمهندسات {ماهرون|ماهرات}، والطيور {مغردون|مغردة}، وفي الغابة {ورودات|ورود} جميلة.",
+"جاء {المصورين|المصوران} إلى الغابة ومعهما {رايدهم|رائدهم}، وكانت {عايلة|عائلة} الغزال {البريئ|البريء} تشرب الماء. وقف {الأخوين|الأخوان} في هدوء، وقرأ {المرشدين|المرشدون} الخريطة. سأل أحدهم {سوالا|سؤالا} صعبا، {وبدء|وبدأ} التصوير {بمبدا|بمبدأ} الصبر، وفاز الفريق {بجايزة|بجائزة} الغابة.",
+"وصل {نبا|نبأ} سار: في الغابة {غزالون|غزلان} و{ثعلبون|ثعالب} و{قردات|قرود}، ورآها الأولاد. {الطالبين|الطالبان} {متفوقين|متفوقان}، و{أخاك|أخوك} بطل، وهؤلاء {مصورين|مصورون} ماهرون. مشى الغزال {ببطئ|ببطء} ولم يخف من {شئ|شيء}.",
+"عقد الكشافة {موتمرا|مؤتمرا} في الغابة، وجلس {رءيس|رئيس} الكشافة في {هدؤ|هدوء}. {المعلمين|المعلمون} {حاضرين|حاضرون}، و{يبدء|يبدأ} الاجتماع بقراءة القرآن. وصل {أباك|أبوك} ومعه {كتابون|كتب} كثيرة، وحضر {المصورين|المصوران} {بسيارون|بسيارات} جديدة.",
+"اجتمع الكشافة على {شاطي|شاطئ} النهر، وكان القائد {مسوول|مسؤول} عن الرحلة. {بدء|بدأ} الجميع بطرح {اسيلة|أسئلة} على المرشد. {الحارسين|الحارسان} {ماهرين|ماهران}، وذهب {أخاك|أخوك} إلى {ملجا|ملجأ} الغابة ليصور {أسدات|أسود}، وانتصر {الفائزين|الفائزون} بالمسابقة."
+];
+const $=id=>document.getElementById(id);
+let name='',fem=false,lv=0,found=0,wrong=0,scores=[],snd=true,ac;
+function tone(f,t,d,ty='sine',v=.2){if(!snd)return;try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.value=f;g.gain.setValueAtTime(v,ac.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+t+d);o.connect(g);g.connect(ac.destination);o.start(ac.currentTime+t);o.stop(ac.currentTime+t+d)}catch(e){}}
+function click(){tone(1800,0,.04,'square',.1);tone(900,.05,.08,'square',.1)}
+function say(s){if(!snd)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(s);u.lang='ar-SA';u.rate=1;speechSynthesis.speak(u)}catch(e){}}
+const cheers=['أحسنت!','ممتاز!','رائعة!','بطل!','لقطة جميلة!','برافو!'];
+function flash(){const d=document.createElement('div');d.className='flash';document.body.appendChild(d);setTimeout(()=>d.remove(),300)}
+function good(){click();flash();[523,659,784,1047].forEach((f,i)=>tone(f,.1+i*.08,.25,'triangle'));const c=cheers[Math.floor(Math.random()*cheers.length)];say(c);pop('🎉 '+c)}
+function fan(){click();flash();[523,523,659,784,659,784,1047].forEach((f,i)=>tone(f,i*.14,.3,'square',.12));say(fem?'أحسنتِ! أكملتِ المستوى':'أحسنت! أكملت المستوى')}
+function pop(t){const d=document.createElement('div');d.className='pop';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1000)}
+$('gm').onclick=()=>{fem=false;$('gm').className='on';$('gf').className=''};
+$('gf').onclick=()=>{fem=true;$('gf').className='on';$('gm').className=''};
+$('snd').onclick=()=>{snd=!snd;$('snd').textContent=snd?'🔊':'🔇'};
+$('go').onclick=()=>{name=$('nm').value.trim();if(!name){$('nm').focus();$('nm').style.borderColor='#e63946';return}
+tone(440,0,.1);$('home').classList.add('hide');$('game').classList.remove('hide');lv=0;scores=[];load()};
+function load(){found=0;wrong=0;$('nx').classList.add('hide');$('note').textContent='اضغط على الكلمة التي تظن أن فيها خطأً 🎯';
+$('lv').textContent='🌲 المستوى '+(lv+1)+' من 10';$('pb').style.width=(lv*10)+'%';upd();
+const box=$('txt');box.innerHTML='';
+P[lv].split(' ').forEach(tk=>{const m=tk.match(/^([^{]*)\{([^|]+)\|([^}]+)\}(.*)$/);const s=document.createElement('span');s.className='w';
+if(m){s.textContent=m[1]+m[2]+m[4];s.dataset.r=m[1]+m[3]+m[4];s.dataset.e=1}else s.textContent=tk;
+s.onclick=()=>hit(s);box.appendChild(s);box.appendChild(document.createTextNode(' '))})}
+function upd(){$('cnt').textContent='📸 '+found+' / 10'}
+function hit(s){if(s.classList.contains('ok')||found>=10)return;
+if(s.dataset.e){s.textContent=s.dataset.r;s.classList.add('ok');found++;upd();$('note').textContent='';
+if(found==10){const sc=Math.max(0,10-wrong);scores.push(sc);fan();$('note').textContent='🏆 صورت كل الأخطاء! درجتك في هذا المستوى: '+sc+' من 10';$('pb').style.width=((lv+1)*10)+'%';
+$('nx').textContent=lv==9?'🏅 احصل على الشهادة':'المستوى التالي 🌲';$('nx').classList.remove('hide')}else good()}
+else{wrong++;tone(180,0,.25,'sawtooth',.12);s.classList.add('bad');setTimeout(()=>s.classList.remove('bad'),400);$('note').textContent='هذه الكلمة صحيحة 🙂 حاول مرة أخرى (محاولات خاطئة: '+wrong+')'}}
+$('nx').onclick=()=>{lv++;if(lv<10)load();else finish()};
+function finish(){$('game').classList.add('hide');$('end').classList.remove('hide');const t=scores.reduce((a,b)=>a+b,0);
+const r=t>=90?'ممتاز 🌟':t>=75?'جيد جدًا ⭐':t>=60?'جيد 👍':'مقبول — واصل التدريب 💪';
+$('cert').innerHTML='<div style="font-size:2.6rem">🏅📸🦌</div><h2>شهادة مصوّر الغابة المبدع</h2><p style="margin:4px">تُمنح هذه الشهادة إلى '+(fem?'التلميذة':'التلميذ')+'</p><div class="nm"></div><p style="margin:6px">لإتمام'+(fem?'ها':'ه')+' المستويات العشرة بنجاح في تصحيح أخطاء الهمزة المتوسطة والمتطرفة والمبتدأ والخبر والفاعل وأنواع الجموع</p><div class="sc">'+t+' / 100</div><p style="font-weight:900;font-size:1.3rem;margin:4px">التقدير: '+r+'</p><p style="margin:4px">'+new Date().toLocaleDateString('ar-EG')+'</p>';
+document.querySelector('.cert .nm').textContent=name;
+[523,659,784,1047,784,1047,1319].forEach((f,i)=>tone(f,i*.15,.4,'triangle',.18));say('مبروك يا '+name+'! حصلت على '+t+' من مئة')}
+$('again').onclick=()=>{$('end').classList.add('hide');$('home').classList.remove('hide')};
+</script>
+</body>
+</html>
